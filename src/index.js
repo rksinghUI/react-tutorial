@@ -12,6 +12,13 @@ import ProductComponent from './components/product/product.component';
 import HttpClientComponent from './components/serviceCall/HttpClient';
 import NavigationComponent from './components/navigation/navigation.component';
 import ReactFormsComponent from './components/reactForms/form';
+import PostMethodComponent from './components/eventHandlers/person';
+import AuthorComponent from './components/AuthorPage/authorPage';
+import CourseComponent from './components/course/coursePage';
+
+// ReactDOM.render(<provide store={store}>
+//  <App />
+// </provide>
 
 ReactDOM.render(
   <BrowserRouter>
@@ -30,6 +37,9 @@ ReactDOM.render(
         <Route path='/product' component={ProductComponent} />
         <Route path='/httpServiceCall' component={HttpClientComponent} />
         <Route path='/forms' component={ReactFormsComponent} />
+        <Route path='/person' component={PostMethodComponent} />
+        <Route path='/author' component={AuthorComponent} />
+        <Route path='/course' component={CourseComponent} />
       </div>
     </div>
   </BrowserRouter>
