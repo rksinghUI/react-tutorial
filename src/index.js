@@ -11,6 +11,7 @@ import AboutUsComponent from './components/about-us/about-us.component';
 import ProductComponent from './components/product/product.component';
 import HttpClientComponent from './components/serviceCall/HttpClient';
 import NavigationComponent from './components/navigation/navigation.component';
+import ReactFormsComponent from './components/reactForms/form';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,13 +22,14 @@ ReactDOM.render(
           <NavigationComponent />
         </header>
       </div>
-      <div style={{width:'70%', margin: '0 auto'}}>
+      <div style={{width:'70%', margin: '0 auto', padding: '40px 0px'}}>
         <Route path='/' component={App} />
         <Route path='/Home' component={HomeComponent} />
         <Route path='/Customer' component={CustomerComponent} />
         <Route path='/AboutUs' component={AboutUsComponent} />
         <Route path='/product' component={ProductComponent} />
         <Route path='/httpServiceCall' component={HttpClientComponent} />
+        <Route path='/forms' component={ReactFormsComponent} />
       </div>
     </div>
   </BrowserRouter>

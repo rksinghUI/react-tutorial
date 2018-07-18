@@ -3,13 +3,26 @@ import axios from 'axios';
 
 class HttpClientComponent extends Component {
   state = {
-    listOFProducts: []
+    listOFProducts: [],
+    singleProduct: []
   }
   constructor() {
     super();
     axios.get('https://jsonplaceholder.typicode.com/posts')
       .then((response) => {
         this.setState({ listOFProducts: response.data })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+
+      axios.get('https://jsonplaceholder.typicode.com/posts', {
+        params: {
+          userId: 3
+        }
+      })
+      .then((response) => {
+        this.setState({ singleProduct: response.data })
       })
       .catch((error) => {
         console.log(error);

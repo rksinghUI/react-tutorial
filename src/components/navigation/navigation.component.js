@@ -10,6 +10,7 @@ class NavigationComponent extends Component {
           <li style={{ 'display':'inline', 'padding':'20px'}}><Link style={{'color':'white'}} to='/AboutUs'>about us</Link></li>
           <li style={{ 'display':'inline', 'padding':'20px'}}><Link style={{'color':'white'}} to='/product'>Product</Link></li>
           <li style={{ 'display':'inline', 'padding':'20px'}}><Link style={{'color':'white'}} to='/httpServiceCall'>HTTP service calls</Link></li>
+          <li style={{ 'display':'inline', 'padding':'20px'}}><Link style={{'color':'white'}} to='/forms'>React Forms</Link></li>
         </ul>
       </div>
     );
