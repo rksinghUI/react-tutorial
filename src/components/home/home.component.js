@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Hello from '../../hello';
-import Student from '../../student';
-import Clock from '../../clock';
-import Employee from '../../employee';
-import Basecontainer from '../../baseComponent';
-import PasswordComponent from '../../passwordComponent';
+import Hello from '../hello';
+import Student from '../student';
+import Clock from '../clock';
+import Employee from '../employee';
+import Basecontainer from '../baseComponent';
+import PasswordComponent from '../passwordComponent';
+import HttpClientComponent from '../serviceCall/HttpClient';
 
 class BaseHello extends Component {
   render() {
